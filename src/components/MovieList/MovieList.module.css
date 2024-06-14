@@ -1,0 +1,13 @@
+.mainAllMovies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.movieItem{
+gap: 20px;
+flex-basis: calc((100% - 20px) / 4);
+
+}

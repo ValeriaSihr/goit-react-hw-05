@@ -19,10 +19,11 @@ ul {
 
 body {
   margin: 0;
-  display: flex;
+  /* display: flex; */
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  
 }
 
 h1 {
@@ -40,4 +41,8 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+}
+
+a{
+  text-decoration: none;
 }
