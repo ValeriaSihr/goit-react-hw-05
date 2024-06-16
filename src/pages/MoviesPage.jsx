@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import axios from 'axios';
-import MovieList from '../components/MovieList';
+import MovieList from '../components/MovieList/MovieList';
+
 
 const API_KEY = 'd6c8e1f1b5fe7d3865a841c0373a6307';
 const API_URL = 'https://api.themoviedb.org/3';
