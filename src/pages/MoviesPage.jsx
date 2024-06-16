@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import axios from 'axios';
 import MovieList from '../components/MovieList/MovieList';
+import css from '../pages/MoviesPage.module.css'
 
 
 const API_KEY = 'd6c8e1f1b5fe7d3865a841c0373a6307';
@@ -42,9 +43,9 @@ const MoviesPage = () => {
   };
 
   return (
-    <div>
+    <div className={css.searchBar}>
       <form onSubmit={handleSearch}>
-        <input type="text" name="query" defaultValue={query} />
+        <input className={css.input} type="text" name="query" defaultValue={query} />
         <button type="submit">Search</button>
       </form>
       {movies.length > 0 && <MovieList movies={movies} />}
